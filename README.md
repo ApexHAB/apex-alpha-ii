@@ -1,7 +1,8 @@
 # Apex Alpha II
-## A small, light-weight backup flight computer with potential applications as a balloon neck payload
+## A tiny, light-weight 'pico' flight computer with potential applications as a balloon neck payload
 
-The flight computer is based around an Atmel AVR microcontroller and utilises a U-Blox MAX GPS and a RFM22B radio module.
+The flight computer is based around a CC430 microcontroller and radio by Texas Instruments with a uBlox Max-6.
+It runs off a single AAA battery.
 
 ## Useful links
 
