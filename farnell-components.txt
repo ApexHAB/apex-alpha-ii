@@ -1,0 +1,4 @@
+26MHz crystal - 1841998RL
+Red LED - 1318244RL
+Power Inductor - 1612110
+Inductor - 1292697
