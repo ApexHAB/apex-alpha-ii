@@ -11441,18 +11441,18 @@ https://github.com/ApexHAB/apex-eagle-library</description>
 <rectangle x1="4.9644" y1="12.5387" x2="5.6198" y2="12.5463" layer="21"/>
 <rectangle x1="5.1549" y1="12.5463" x2="5.4293" y2="12.554" layer="21"/>
 </package>
-<package name="SMD-BATTERY-HOLDER-AAA">
-<smd name="GND" x="27.686" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
-<hole x="-24.3967" y="5.3086" drill="2"/>
-<wire x1="-27.178" y1="-6.35" x2="27.178" y2="-6.35" width="0.127" layer="21"/>
-<smd name="+V" x="-27.686" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
-<wire x1="-27.178" y1="6.35" x2="27.178" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-27.178" y1="6.35" x2="-27.178" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-27.178" y1="-3.81" x2="-27.178" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="27.178" y1="6.35" x2="27.178" y2="3.81" width="0.127" layer="21"/>
-<wire x1="27.178" y1="-3.81" x2="27.178" y2="-6.35" width="0.127" layer="21"/>
-<text x="-20.955" y="-2.54" size="5.08" layer="21">+</text>
-<text x="18.415" y="-2.54" size="5.08" layer="21">-</text>
+<package name="SMD-BATTERY-HOLDER-CR123A">
+<smd name="GND" x="22.3774" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
+<hole x="-18.8468" y="8.1026" drill="2"/>
+<wire x1="-21.463" y1="-9.144" x2="21.463" y2="-9.144" width="0.127" layer="21"/>
+<smd name="+V" x="-22.3774" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
+<wire x1="-21.463" y1="-3.81" x2="-21.463" y2="-9.144" width="0.127" layer="21"/>
+<wire x1="21.463" y1="-3.81" x2="21.463" y2="-9.144" width="0.127" layer="21"/>
+<text x="-16.891" y="-2.286" size="5.08" layer="21">+</text>
+<text x="13.081" y="-2.54" size="5.08" layer="21">-</text>
+<wire x1="21.463" y1="9.144" x2="-21.463" y2="9.144" width="0.127" layer="21"/>
+<wire x1="21.463" y1="3.81" x2="21.463" y2="9.144" width="0.127" layer="21"/>
+<wire x1="-21.463" y1="3.81" x2="-21.463" y2="9.144" width="0.127" layer="21"/>
 </package>
 <package name="R0402">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
@@ -13563,13 +13563,13 @@ This is the standard ApexHAB PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD-BATTERY-HOLDER-AAA">
+<deviceset name="SMD-BATTERY-HOLDER-CR123A">
 <gates>
-<gate name="+" symbol="MV" x="0" y="10.16"/>
-<gate name="-" symbol="MV" x="0" y="2.54"/>
+<gate name="+" symbol="MV" x="2.54" y="0"/>
+<gate name="-" symbol="MV" x="2.54" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="SMD-BATTERY-HOLDER-AAA">
+<device name="" package="SMD-BATTERY-HOLDER-CR123A">
 <connects>
 <connect gate="+" pin="S" pad="+V"/>
 <connect gate="-" pin="S" pad="GND"/>
@@ -16148,7 +16148,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="GPS" library="Ava" deviceset="UBLOX_MAX-6" device=""/>
 <part name="U$1" library="Ava" deviceset="JTI_ANTENNA-1575AT43A40" device=""/>
 <part name="GND1" library="apex" deviceset="GND" device=""/>
-<part name="AAA" library="apex" deviceset="SMD-BATTERY-HOLDER-AAA" device="" value=""/>
+<part name="CR123A" library="apex" deviceset="SMD-BATTERY-HOLDER-CR123A" device="" value=""/>
 <part name="GND2" library="apex" deviceset="GND" device=""/>
 <part name="C2" library="apex" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C3" library="apex" deviceset="CAP" device="0402-CAP" value="1uF"/>
@@ -16232,8 +16232,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="GPS" gate="G$1" x="104.14" y="106.68"/>
 <instance part="U$1" gate="G$1" x="68.58" y="129.54" rot="R90"/>
 <instance part="GND1" gate="1" x="134.62" y="185.42"/>
-<instance part="AAA" gate="+" x="76.2" y="200.66" rot="R180"/>
-<instance part="AAA" gate="-" x="83.82" y="170.18" rot="R180"/>
+<instance part="CR123A" gate="+" x="76.2" y="200.66" rot="R180"/>
+<instance part="CR123A" gate="-" x="83.82" y="170.18" rot="R180"/>
 <instance part="GND2" gate="1" x="88.9" y="165.1"/>
 <instance part="C2" gate="G$1" x="83.82" y="195.58" rot="R180"/>
 <instance part="C3" gate="G$1" x="134.62" y="193.04"/>
@@ -16340,7 +16340,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="AAA" gate="-" pin="S"/>
+<pinref part="CR123A" gate="-" pin="S"/>
 <wire x1="86.36" y1="170.18" x2="88.9" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="170.18" x2="88.9" y2="167.64" width="0.1524" layer="91"/>
 <junction x="88.9" y="170.18"/>
@@ -16749,7 +16749,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="198.12" x2="83.82" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="AAA" gate="+" pin="S"/>
+<pinref part="CR123A" gate="+" pin="S"/>
 <wire x1="78.74" y1="200.66" x2="83.82" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="VREG" gate="G$1" pin="IN"/>
 <wire x1="83.82" y1="200.66" x2="96.52" y2="200.66" width="0.1524" layer="91"/>

@@ -5794,18 +5794,18 @@ https://github.com/ApexHAB/apex-eagle-library</description>
 <rectangle x1="4.9644" y1="12.5387" x2="5.6198" y2="12.5463" layer="21"/>
 <rectangle x1="5.1549" y1="12.5463" x2="5.4293" y2="12.554" layer="21"/>
 </package>
-<package name="SMD-BATTERY-HOLDER-AAA">
-<smd name="GND" x="27.686" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
-<hole x="-24.3967" y="5.3086" drill="2"/>
-<wire x1="-27.178" y1="-6.35" x2="27.178" y2="-6.35" width="0.127" layer="21"/>
-<smd name="+V" x="-27.686" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
-<wire x1="-27.178" y1="6.35" x2="27.178" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-27.178" y1="6.35" x2="-27.178" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-27.178" y1="-3.81" x2="-27.178" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="27.178" y1="6.35" x2="27.178" y2="3.81" width="0.127" layer="21"/>
-<wire x1="27.178" y1="-3.81" x2="27.178" y2="-6.35" width="0.127" layer="21"/>
-<text x="-20.955" y="-2.54" size="5.08" layer="21">+</text>
-<text x="18.415" y="-2.54" size="5.08" layer="21">-</text>
+<package name="SMD-BATTERY-HOLDER-CR123A">
+<smd name="GND" x="22.3774" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
+<hole x="-18.8468" y="8.1026" drill="2"/>
+<wire x1="-21.463" y1="-9.144" x2="21.463" y2="-9.144" width="0.127" layer="21"/>
+<smd name="+V" x="-22.3774" y="0" dx="6.35" dy="7.62" layer="1" rot="R270"/>
+<wire x1="-21.463" y1="-3.81" x2="-21.463" y2="-9.144" width="0.127" layer="21"/>
+<wire x1="21.463" y1="-3.81" x2="21.463" y2="-9.144" width="0.127" layer="21"/>
+<text x="-16.891" y="-2.286" size="5.08" layer="21">+</text>
+<text x="13.081" y="-2.54" size="5.08" layer="21">-</text>
+<wire x1="21.463" y1="9.144" x2="-21.463" y2="9.144" width="0.127" layer="21"/>
+<wire x1="21.463" y1="3.81" x2="21.463" y2="9.144" width="0.127" layer="21"/>
+<wire x1="-21.463" y1="3.81" x2="-21.463" y2="9.144" width="0.127" layer="21"/>
 </package>
 <package name="R0402">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
@@ -6297,7 +6297,7 @@ design rules under a new name.</description>
 <element name="IC1" library="TI_MSP430_v16" package="RGZ48" value="CC430F5135" x="6.604" y="14.986" rot="R270"/>
 <element name="GPS" library="Ava" package="UBLOX_MAX-6" value="UBLOX_MAX-6" x="6.604" y="59.436" rot="R270"/>
 <element name="U$1" library="Ava" package="JTI_ANTENNA-1575AT43A40" value="JTI_ANTENNA-1575AT43A40" x="8.636" y="70.104" rot="R90"/>
-<element name="AAA" library="apex" package="SMD-BATTERY-HOLDER-AAA" value="" x="6.604" y="33.274" rot="MR90"/>
+<element name="CR123A" library="apex" package="SMD-BATTERY-HOLDER-CR123A" value="" x="6.604" y="33.274" rot="MR90"/>
 <element name="C2" library="apex" package="0402-CAP" value="1uF" x="9.906" y="45.212" rot="R270"/>
 <element name="C3" library="apex" package="0402-CAP" value="1uF" x="2.794" y="45.212" rot="R90"/>
 <element name="F1" library="johanson-technology" package="2450BM15A0002" value="0433BM15A0001" x="5.842" y="8.128" rot="R90"/>
@@ -6341,7 +6341,7 @@ design rules under a new name.</description>
 <contactref element="X2" pad="G@2"/>
 <contactref element="X2" pad="G@3"/>
 <contactref element="X2" pad="G@4"/>
-<contactref element="AAA" pad="GND"/>
+<contactref element="CR123A" pad="GND"/>
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="2"/>
 <contactref element="F1" pad="2"/>
@@ -6372,8 +6372,8 @@ design rules under a new name.</description>
 <contactref element="C18" pad="2"/>
 <contactref element="VREG" pad="2"/>
 <wire x1="8.754" y1="63.986" x2="10.904" y2="63.986" width="0" layer="19" extent="1-1"/>
-<wire x1="6.604" y1="60.96" x2="8.754" y2="63.986" width="0" layer="19" extent="1-16"/>
-<wire x1="7.654" y1="54.486" x2="6.604" y2="60.96" width="0" layer="19" extent="1-16"/>
+<wire x1="6.604" y1="55.6514" x2="8.754" y2="63.986" width="0" layer="19" extent="1-16"/>
+<wire x1="7.654" y1="54.486" x2="6.604" y2="55.6514" width="0" layer="19" extent="1-16"/>
 <wire x1="2.204" y1="54.486" x2="7.654" y2="54.486" width="0" layer="19" extent="1-1"/>
 <wire x1="2.794" y1="45.862" x2="2.204" y2="54.486" width="0" layer="19" extent="1-1"/>
 <wire x1="9.906" y1="45.862" x2="2.794" y2="45.862" width="0" layer="19" extent="1-1"/>
@@ -6533,13 +6533,13 @@ design rules under a new name.</description>
 <wire x1="6.854" y1="18.336" x2="3.254" y2="54.486" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
-<contactref element="AAA" pad="+V"/>
+<contactref element="CR123A" pad="+V"/>
 <contactref element="C2" pad="2"/>
 <contactref element="VREG" pad="1"/>
 <contactref element="VREG" pad="3"/>
 <wire x1="-56.5" y1="-13.55" x2="-57.8" y2="-13.55" width="0" layer="19" extent="1-1"/>
-<wire x1="6.604" y1="5.588" x2="-56.5" y2="-13.55" width="0" layer="19" extent="1-16"/>
-<wire x1="9.906" y1="44.562" x2="6.604" y2="5.588" width="0" layer="19" extent="1-16"/>
+<wire x1="6.604" y1="10.8966" x2="-56.5" y2="-13.55" width="0" layer="19" extent="1-16"/>
+<wire x1="9.906" y1="44.562" x2="6.604" y2="10.8966" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 </board>
