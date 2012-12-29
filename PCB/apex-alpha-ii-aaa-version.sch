@@ -3192,6 +3192,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="R0402">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -4826,7 +4835,6 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
 <wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
 <wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
 <wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
@@ -4989,7 +4997,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="U$2" library="apex" deviceset="0603INDUCTOR" device="" value="EXC3BB601H"/>
 <part name="GND19" library="apex" deviceset="GND" device=""/>
 <part name="P+9" library="apex" deviceset="VCC" device=""/>
-<part name="U$3" library="apex" deviceset="LED" device="_0603" value="STATUS"/>
+<part name="U$3" library="apex" deviceset="LED" device="" value="STATUS"/>
 <part name="GND20" library="apex" deviceset="GND" device=""/>
 <part name="GND21" library="apex" deviceset="GND" device=""/>
 <part name="C18" library="apex" deviceset="CAP" device="0402-CAP" value="100nF"/>
