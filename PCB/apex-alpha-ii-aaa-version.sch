@@ -4989,7 +4989,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="U$2" library="apex" deviceset="0603INDUCTOR" device="" value="EXC3BB601H"/>
 <part name="GND19" library="apex" deviceset="GND" device=""/>
 <part name="P+9" library="apex" deviceset="VCC" device=""/>
-<part name="U$3" library="apex" deviceset="LED" device="_0805" value="STATUS"/>
+<part name="U$3" library="apex" deviceset="LED" device="_0603" value="STATUS"/>
 <part name="GND20" library="apex" deviceset="GND" device=""/>
 <part name="GND21" library="apex" deviceset="GND" device=""/>
 <part name="C18" library="apex" deviceset="CAP" device="0402-CAP" value="100nF"/>
