@@ -1,0 +1,39 @@
+Farnell
+============
+26MHz crystal - 			1841998 or 1841997
+Red 0805 1.85V LED - 			1318244
+Power Inductor NR3015 2.2uH - 		1612110
+Inductor EXC3BB601H - 			1292697
+Keystone AAA Battery Holder 2466 - 	1702632
+
+433MHz Balun 0433BM15A0001 -		2148531
+
+10uF 0805 Capacitor (x2) -		9227814
+4.7uF 0805 Capacitor			1759414
+
+1uF 0402 Capacitor (x2)			1759375		
+100nF 0402 Capacitor (x8)		1758896
+470nF 0402 Capacitor			8819726
+2.2nF 0402 Capacitor			1758916
+27pF 0402 Capacitor (x2)		1758953
+2pF 0402 Capacitor (x2)			2133999
+
+560k 0402 Resistor			2141009
+200k 0402 Resistor			1469694
+56k 0402 Resistor
+47k 0402 Resistor
+
+Other
+===========
+uBlox MAX-6G (1.8V)
+
+GPS Chip Antenna
+
+
+
+TI CC430F513x
+
+
+Free Samples
+===========
+TI TPS61200
